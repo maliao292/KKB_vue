@@ -1,27 +1,29 @@
-# kkb_vue
-
-> A Vue.js project
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
+# 深度监视
+-- dara:functuin(){
+    return {
+        myText:"111",
+        stus:[{name:'jack'}]
+    }
+}
+-- 深度监视 ： object || array
+```
+watch:{
+  stus:function(){  
+      // 监视不成功
+  }  
+  stus:{
+      deep:true,
+      handler:function(newV,oldV){
+      // 监视成功
+      }
+  }
+}
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+# slot 
+-- 内置组件  插槽
+-- 父组件传递的DOM结构
+```
+ <my-li>
+ </my-li>
+```

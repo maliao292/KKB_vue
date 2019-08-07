@@ -3,7 +3,12 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
+var MyLi = {
+  template : `<li>
+    666
+  </li>`
+}
+Vue.component('my-li', MyLi)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
